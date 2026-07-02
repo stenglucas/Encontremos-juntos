@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <link rel="stylesheet" type="text/css" href="./folder.page.scss" />
+    <script type="module" src="folder/folder.page.ts"></script>
+
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Mapa</ion-title>
+    <ion-title></ion-title>
+  
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    
+  </ion-header>
+  <div id="datanotloaded" *ngIf="!dataloaded">
+    <!-- <ion-loading trigger="datanotloaded" message="Dismissing after 3 seconds..." duration="3000"></ion-loading> -->
+  </div>
+  <div id="map">
+  
+
+  </div>
+  <div id="button-container" >
+  <ion-button [routerLink]="['../add']" class="mainButton">
+    <ion-icon name="add-outline" size="large"></ion-icon>
+  </ion-button>  
+  <ion-button class="mainButton" (click)="getonePet()">
+    <ion-icon name="camera-outline" size="large" ></ion-icon>
+  </ion-button>  
+  </div>
+</ion-content>
