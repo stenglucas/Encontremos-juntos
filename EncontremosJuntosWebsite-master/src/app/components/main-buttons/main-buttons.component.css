@@ -1,0 +1,29 @@
+.buttons{
+border-radius: 8px;
+max-height: 40px;
+display: flex;
+flex-direction: row;
+background-color: #1e1e1e;
+text-decoration: none;
+color: #FFFFFF;
+}
+a:hover {
+  color: rgb(197, 197, 197);
+  background-color: #1e1e1ed0;
+  text-decoration: none ;
+}
+
+.contenedor-botones{
+  /* background-color: crimson; */
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  flex-direction: row  ;
+  justify-content:  space-evenly;
+  padding-top:  140px;
+}
+.textos{
+  padding-right: 10px;
+
+}
+
